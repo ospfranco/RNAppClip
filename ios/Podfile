@@ -17,6 +17,10 @@ end
 target 'RNAppClip' do
   config = use_native_modules!
 
+  # Auto linking is broken on this package
+  # https://github.com/microsoft/rnx-kit/issues/3208
+  pod 'ReactNativeHost', :path => "../node_modules/@rnx-kit/react-native-host"
+
   use_react_native!(
     :path => config[:reactNativePath],
     # An absolute path to your application root.
@@ -26,6 +30,11 @@ target 'RNAppClip' do
   target 'RNAppClipTests' do
     inherit! :complete
     # Pods for testing
+  end
+
+  target 'Clip' do
+    inherit! :complete
+    # Pods for Clip
   end
 
   post_install do |installer|

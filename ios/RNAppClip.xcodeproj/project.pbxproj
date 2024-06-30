@@ -12,6 +12,15 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		5D46F33C1AE81ED168AA392C /* libPods-RNAppClip-Clip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F563D4BAE05E1E2C0BF866FB /* libPods-RNAppClip-Clip.a */; };
+		70AECBB32C316041004FC5AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AECBB22C316041004FC5AF /* AppDelegate.swift */; };
+		70AECBB52C316041004FC5AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AECBB42C316041004FC5AF /* SceneDelegate.swift */; };
+		70AECBB72C316041004FC5AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AECBB62C316041004FC5AF /* ViewController.swift */; };
+		70AECBBA2C316041004FC5AF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 70AECBB92C316041004FC5AF /* Base */; };
+		70AECBBC2C316042004FC5AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70AECBBB2C316042004FC5AF /* Assets.xcassets */; };
+		70AECBBF2C316042004FC5AF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 70AECBBE2C316042004FC5AF /* Base */; };
+		70AECBC42C316042004FC5AF /* Clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 70AECBB02C316041004FC5AF /* Clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		70AECBCA2C316151004FC5AF /* BridgeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AECBC92C316151004FC5AF /* BridgeManager.swift */; };
 		7699B88040F8A987B510C191 /* libPods-RNAppClip-RNAppClipTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNAppClip-RNAppClipTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		D129E7D37AD51831B1B0D712 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = DA71CEBCD971E92616955D65 /* PrivacyInfo.xcprivacy */; };
@@ -25,12 +34,34 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = RNAppClip;
 		};
+		70AECBC22C316042004FC5AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70AECBAF2C316041004FC5AF;
+			remoteInfo = Clip;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		70AECBC52C316042004FC5AF /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				70AECBC42C316042004FC5AF /* Clip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* RNAppClipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNAppClipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* RNAppClipTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNAppClipTests.m; sourceTree = "<group>"; };
+		12FA9B0B3C6B87CA096F4014 /* Pods-RNAppClip-Clip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNAppClip-Clip.release.xcconfig"; path = "Target Support Files/Pods-RNAppClip-Clip/Pods-RNAppClip-Clip.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* RNAppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNAppClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RNAppClip/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = RNAppClip/AppDelegate.mm; sourceTree = "<group>"; };
@@ -43,10 +74,22 @@
 		5709B34CF0A7D63546082F79 /* Pods-RNAppClip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNAppClip.release.xcconfig"; path = "Target Support Files/Pods-RNAppClip/Pods-RNAppClip.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-RNAppClip-RNAppClipTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNAppClip-RNAppClipTests.debug.xcconfig"; path = "Target Support Files/Pods-RNAppClip-RNAppClipTests/Pods-RNAppClip-RNAppClipTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-RNAppClip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNAppClip.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70AECBB02C316041004FC5AF /* Clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70AECBB22C316041004FC5AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70AECBB42C316041004FC5AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		70AECBB62C316041004FC5AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		70AECBB92C316041004FC5AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		70AECBBB2C316042004FC5AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70AECBBE2C316042004FC5AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70AECBC02C316042004FC5AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70AECBC12C316042004FC5AF /* Clip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clip.entitlements; sourceTree = "<group>"; };
+		70AECBC92C316151004FC5AF /* BridgeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeManager.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RNAppClip/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-RNAppClip-RNAppClipTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNAppClip-RNAppClipTests.release.xcconfig"; path = "Target Support Files/Pods-RNAppClip-RNAppClipTests/Pods-RNAppClip-RNAppClipTests.release.xcconfig"; sourceTree = "<group>"; };
-		DA71CEBCD971E92616955D65 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = RNAppClip/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		9436C71DD7C3A86B859B9259 /* Pods-RNAppClip-Clip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNAppClip-Clip.debug.xcconfig"; path = "Target Support Files/Pods-RNAppClip-Clip/Pods-RNAppClip-Clip.debug.xcconfig"; sourceTree = "<group>"; };
+		DA71CEBCD971E92616955D65 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = RNAppClip/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F563D4BAE05E1E2C0BF866FB /* libPods-RNAppClip-Clip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNAppClip-Clip.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +106,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C80B921A6F3F58F76C31292 /* libPods-RNAppClip.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70AECBAD2C316041004FC5AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D46F33C1AE81ED168AA392C /* libPods-RNAppClip-Clip.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,8 +158,25 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-RNAppClip.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-RNAppClip-RNAppClipTests.a */,
+				F563D4BAE05E1E2C0BF866FB /* libPods-RNAppClip-Clip.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70AECBB12C316041004FC5AF /* Clip */ = {
+			isa = PBXGroup;
+			children = (
+				70AECBC92C316151004FC5AF /* BridgeManager.swift */,
+				70AECBB22C316041004FC5AF /* AppDelegate.swift */,
+				70AECBB42C316041004FC5AF /* SceneDelegate.swift */,
+				70AECBB62C316041004FC5AF /* ViewController.swift */,
+				70AECBB82C316041004FC5AF /* Main.storyboard */,
+				70AECBBB2C316042004FC5AF /* Assets.xcassets */,
+				70AECBBD2C316042004FC5AF /* LaunchScreen.storyboard */,
+				70AECBC02C316042004FC5AF /* Info.plist */,
+				70AECBC12C316042004FC5AF /* Clip.entitlements */,
+			);
+			path = Clip;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -124,6 +192,7 @@
 				13B07FAE1A68108700A75B9A /* RNAppClip */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNAppClipTests */,
+				70AECBB12C316041004FC5AF /* Clip */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -138,6 +207,7 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* RNAppClip.app */,
 				00E356EE1AD99517003FC87E /* RNAppClipTests.xctest */,
+				70AECBB02C316041004FC5AF /* Clip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,6 +219,8 @@
 				5709B34CF0A7D63546082F79 /* Pods-RNAppClip.release.xcconfig */,
 				5B7EB9410499542E8C5724F5 /* Pods-RNAppClip-RNAppClipTests.debug.xcconfig */,
 				89C6BE57DB24E9ADA2F236DE /* Pods-RNAppClip-RNAppClipTests.release.xcconfig */,
+				9436C71DD7C3A86B859B9259 /* Pods-RNAppClip-Clip.debug.xcconfig */,
+				12FA9B0B3C6B87CA096F4014 /* Pods-RNAppClip-Clip.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -188,15 +260,38 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				70AECBC52C316042004FC5AF /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				70AECBC32C316042004FC5AF /* PBXTargetDependency */,
 			);
 			name = RNAppClip;
 			productName = RNAppClip;
 			productReference = 13B07F961A680F5B00A75B9A /* RNAppClip.app */;
 			productType = "com.apple.product-type.application";
+		};
+		70AECBAF2C316041004FC5AF /* Clip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70AECBC82C316042004FC5AF /* Build configuration list for PBXNativeTarget "Clip" */;
+			buildPhases = (
+				FEA788CDDDC698620BEA0884 /* [CP] Check Pods Manifest.lock */,
+				70AECBAC2C316041004FC5AF /* Sources */,
+				70AECBAD2C316041004FC5AF /* Frameworks */,
+				70AECBAE2C316041004FC5AF /* Resources */,
+				70AECBCB2C3162E7004FC5AF /* Bundle RN */,
+				D2DAE7384F6A7431D6F55215 /* [CP] Embed Pods Frameworks */,
+				83CCD4E53B1700F3845E7729 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Clip;
+			productName = Clip;
+			productReference = 70AECBB02C316041004FC5AF /* Clip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
 		};
 /* End PBXNativeTarget section */
 
@@ -204,6 +299,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -212,6 +308,9 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
+					};
+					70AECBAF2C316041004FC5AF = {
+						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
@@ -230,6 +329,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* RNAppClip */,
 				00E356ED1AD99517003FC87E /* RNAppClipTests */,
+				70AECBAF2C316041004FC5AF /* Clip */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +349,16 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				D129E7D37AD51831B1B0D712 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70AECBAE2C316041004FC5AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70AECBBC2C316042004FC5AF /* Assets.xcassets in Resources */,
+				70AECBBF2C316042004FC5AF /* Base in Resources */,
+				70AECBBA2C316041004FC5AF /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +396,43 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNAppClip/Pods-RNAppClip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70AECBCB2C3162E7004FC5AF /* Bundle RN */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle RN";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE index.clip.js\"\n";
+		};
+		83CCD4E53B1700F3845E7729 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNAppClip-Clip/Pods-RNAppClip-Clip-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNAppClip-Clip/Pods-RNAppClip-Clip-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNAppClip-Clip/Pods-RNAppClip-Clip-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
@@ -349,6 +496,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNAppClip-RNAppClipTests/Pods-RNAppClip-RNAppClipTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D2DAE7384F6A7431D6F55215 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNAppClip-Clip/Pods-RNAppClip-Clip-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RNAppClip-Clip/Pods-RNAppClip-Clip-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNAppClip-Clip/Pods-RNAppClip-Clip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -383,6 +547,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RNAppClip-RNAppClipTests/Pods-RNAppClip-RNAppClipTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FEA788CDDDC698620BEA0884 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNAppClip-Clip-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -403,6 +589,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		70AECBAC2C316041004FC5AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70AECBB72C316041004FC5AF /* ViewController.swift in Sources */,
+				70AECBB32C316041004FC5AF /* AppDelegate.swift in Sources */,
+				70AECBCA2C316151004FC5AF /* BridgeManager.swift in Sources */,
+				70AECBB52C316041004FC5AF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -411,7 +608,31 @@
 			target = 13B07F861A680F5B00A75B9A /* RNAppClip */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
+		70AECBC32C316042004FC5AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70AECBAF2C316041004FC5AF /* Clip */;
+			targetProxy = 70AECBC22C316042004FC5AF /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70AECBB82C316041004FC5AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70AECBB92C316041004FC5AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		70AECBBD2C316042004FC5AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70AECBBE2C316042004FC5AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
@@ -469,6 +690,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-RNAppClip.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -496,6 +718,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-RNAppClip.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -514,6 +737,97 @@
 				PRODUCT_NAME = RNAppClip;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		70AECBC62C316042004FC5AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9436C71DD7C3A86B859B9259 /* Pods-RNAppClip-Clip.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = Clip/Clip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Clip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RNAppClip;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.RNAppClip.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70AECBC72C316042004FC5AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12FA9B0B3C6B87CA096F4014 /* Pods-RNAppClip-Clip.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = Clip/Clip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Clip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RNAppClip;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.RNAppClip.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -590,10 +904,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -665,10 +976,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -693,6 +1001,15 @@
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
 				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70AECBC82C316042004FC5AF /* Build configuration list for PBXNativeTarget "Clip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70AECBC62C316042004FC5AF /* Debug */,
+				70AECBC72C316042004FC5AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

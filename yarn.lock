@@ -2586,6 +2586,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@rnx-kit/react-native-host@npm:^0.4.10":
+  version: 0.4.10
+  resolution: "@rnx-kit/react-native-host@npm:0.4.10"
+  peerDependencies:
+    react-native: ">=0.66"
+  checksum: 5f2f4fd7b31f3f09a8e128dbaf28dea01a46c09dad136e25f6a5bb51cc39a2a88d4a9c5a2209af48f3aae7c7b70ebede716988a4ad485affd2d37ea5759a4a9d
+  languageName: node
+  linkType: hard
+
 "@sideway/address@npm:^4.1.5":
   version: 4.1.5
   resolution: "@sideway/address@npm:4.1.5"
@@ -3007,6 +3016,7 @@ __metadata:
     "@react-native/eslint-config": 0.74.84
     "@react-native/metro-config": 0.74.84
     "@react-native/typescript-config": 0.74.84
+    "@rnx-kit/react-native-host": ^0.4.10
     "@types/react": ^18.2.6
     "@types/react-test-renderer": ^18.0.0
     babel-jest: ^29.6.3
